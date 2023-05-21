@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<script src="/mycaptcha.js"></script>
+<title>My Captcha Sample</title>
+<style type="text/css">
+html, body{
+  text-align: center;
+  background-color: #fafafa;
+  font-size: 20px;
+  color: #333;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <form method="POST" action="/login">
+    <div class="my-captcha" data-apikey="apikey-for-test"></div>
+    <p><input type="text" name="userid" value=""/></p>
+    <p><input type="password" name="password" value=""/></p>
+    <p><input type="submit" value="送信"/></p>
+  </form>
+</div>
+
+</body>
+</html>

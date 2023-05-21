@@ -1,0 +1,6 @@
+.git/
+node_modules/
+settings.js.*
+.memo.txt
+npm-debug.log
+pg.sh
