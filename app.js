@@ -66,7 +66,7 @@ app.post( '/login', function( req, res ){
       res.write( JSON.stringify( err0, null, 2 ) );
       res.end();
     }else{
-      //. 本当はここまで来た後に userid と password の検証を行う
+      //. 本当はここまで来た後に userid と password の検証を行い、正しい転送先に送る
 
       res.write( body0 );
       res.end();

@@ -12,6 +12,9 @@ html, body{
   font-size: 20px;
   color: #333;
 }
+#form-elements{
+  border: solid 2px #ccc;
+}
 </style>
 </head>
 <body>
@@ -19,9 +22,11 @@ html, body{
 <div class="container">
   <form method="POST" action="/login">
     <div class="my-captcha" data-apikey="apikey-for-test"></div>
-    <p><input type="text" name="userid" value=""/></p>
-    <p><input type="password" name="password" value=""/></p>
+    <div id="form-elements">
+    <p><label for="userid">User ID</label><input type="text" name="userid" id="userid" value=""/></p>
+    <p><label for="password">Password</label><input type="password" name="password" id="password" value=""/></p>
     <p><input type="submit" value="送信"/></p>
+    </div>
   </form>
 </div>
 
