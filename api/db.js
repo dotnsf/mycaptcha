@@ -146,8 +146,8 @@ api.createCaptcha = async function( apikey, origin ){
                   var query1 = { text: sql1, values: [ apikey ] };
                   conn.query( query1, function( err1, result1 ){
                     //. 問題と回答
-                    var question = '1+2';
-                    var answer = '3';
+                    var question = Math.floor( Math.random() * 10 ) + '+' + Math.floor( Math.random() * 10 );
+                    var answer = eval( question );
 
                     var html = '<div id="__mycaptcha_form">'
                       + '<h2>' + question + '</h2>'
